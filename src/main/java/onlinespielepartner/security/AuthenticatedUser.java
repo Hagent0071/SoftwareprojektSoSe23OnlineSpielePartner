@@ -2,8 +2,8 @@ package onlinespielepartner.security;
 
 import com.vaadin.flow.spring.security.AuthenticationContext;
 import java.util.Optional;
-import onlinespielepartner.data.User;
-import onlinespielepartner.data.UserRepository;
+import onlinespielepartner.data.User.User;
+import onlinespielepartner.data.User.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,5 +28,6 @@ public class AuthenticatedUser {
     public void logout() {
         authenticationContext.logout();
     }
+
 
 }

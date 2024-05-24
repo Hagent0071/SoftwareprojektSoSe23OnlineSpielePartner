@@ -1,6 +1,8 @@
-package onlinespielepartner.data;
+package onlinespielepartner.data.OnlineSpieleTreffen;
 
 import jakarta.persistence.Entity;
+import onlinespielepartner.data.AbstractEntity;
+
 import java.time.LocalDateTime;
 
 @Entity

@@ -1,4 +1,4 @@
-package onlinespielepartner.data;
+package onlinespielepartner.data.User;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
@@ -9,6 +9,8 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
+import onlinespielepartner.data.AbstractEntity;
+
 import java.util.Set;
 
 @Entity
@@ -16,15 +18,15 @@ import java.util.Set;
 public class User extends AbstractEntity {
 
     private String username;
+
     private String name;
+
     @JsonIgnore
     private String hashedPassword;
+
     @Enumerated(EnumType.STRING)
     @ElementCollection(fetch = FetchType.EAGER)
     private Set<Role> roles;
-    @Lob
-    @Column(length = 1000000)
-    private byte[] profilePicture;
 
     public String getUsername() {
         return username;
@@ -50,11 +52,4 @@ public class User extends AbstractEntity {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
-    public byte[] getProfilePicture() {
-        return profilePicture;
-    }
-    public void setProfilePicture(byte[] profilePicture) {
-        this.profilePicture = profilePicture;
-    }
-
 }

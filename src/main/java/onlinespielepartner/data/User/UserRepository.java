@@ -1,4 +1,4 @@
-package onlinespielepartner.data;
+package onlinespielepartner.data.User;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;

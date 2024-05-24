@@ -24,7 +24,7 @@ import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
 import jakarta.annotation.security.RolesAllowed;
 import java.time.Duration;
 import java.util.Optional;
-import onlinespielepartner.data.OnlineSpieleTreffen;
+import onlinespielepartner.data.OnlineSpieleTreffen.OnlineSpieleTreffen;
 import onlinespielepartner.services.OnlineSpieleTreffenService;
 import onlinespielepartner.views.MainLayout;
 import org.springframework.data.domain.PageRequest;

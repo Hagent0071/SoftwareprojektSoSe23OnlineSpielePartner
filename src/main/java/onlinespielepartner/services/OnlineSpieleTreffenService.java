@@ -1,8 +1,8 @@
 package onlinespielepartner.services;
 
 import java.util.Optional;
-import onlinespielepartner.data.OnlineSpieleTreffen;
-import onlinespielepartner.data.OnlineSpieleTreffenRepository;
+import onlinespielepartner.data.OnlineSpieleTreffen.OnlineSpieleTreffen;
+import onlinespielepartner.data.OnlineSpieleTreffen.OnlineSpieleTreffenRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;

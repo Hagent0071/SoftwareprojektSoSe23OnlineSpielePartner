@@ -2,8 +2,8 @@ package onlinespielepartner.security;
 
 import java.util.List;
 import java.util.stream.Collectors;
-import onlinespielepartner.data.User;
-import onlinespielepartner.data.UserRepository;
+import onlinespielepartner.data.User.User;
+import onlinespielepartner.data.User.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

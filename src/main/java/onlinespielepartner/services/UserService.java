@@ -1,8 +1,8 @@
 package onlinespielepartner.services;
 
 import java.util.Optional;
-import onlinespielepartner.data.User;
-import onlinespielepartner.data.UserRepository;
+import onlinespielepartner.data.User.User;
+import onlinespielepartner.data.User.UserRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
